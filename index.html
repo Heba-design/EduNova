@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduNova Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <div class="logo-icon">EN</div>
+    <span class="logo-text">Edu<span>Nova</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">عن المنصة</a></li>
+    <li><a href="#courses">الكورسات</a></li>
+    <li><a href="#features">المميزات</a></li>
+    <li><a href="#testimonials">آراء الطلاب</a></li>
+    <li><a href="#cta" class="nav-cta">ابدأ الآن</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="قائمة التنقل">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">عن المنصة</a>
+  <a href="#courses" onclick="toggleMenu()">الكورسات</a>
+  <a href="#features" onclick="toggleMenu()">المميزات</a>
+  <a href="#testimonials" onclick="toggleMenu()">آراء الطلاب</a>
+  <a href="#cta" onclick="toggleMenu()" style="color:var(--primary); font-weight:600;">ابدأ الآن ←</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot">✦</div>
+        منصة تعليمية رائدة في المنطقة
+      </div>
+      <h1 class="hero-title">
+        تعلم مهارات المستقبل<br>
+        مع كورسات عملية<br>
+        <span class="highlight">تساعدك تبدأ شغلك</span>
+      </h1>
+      <p class="hero-desc">
+        انضم لآلاف الطلاب الذين غيّروا مساراتهم المهنية من خلال كورسات تطبيقية في البرمجة والتصميم والمهارات الرقمية.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">ابدأ مجاناً ←</a>
+        <a href="#courses" class="btn-secondary">استعرض الكورسات</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">+5,000</span>
+          <span class="stat-label">طالب مسجّل</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">+40</span>
+          <span class="stat-label">كورس متاح</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">96%</span>
+          <span class="stat-label">نسبة الرضا</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="floating-card card-main">
+          <div class="card-icon" style="background:#EEF2FF;">💻</div>
+          <div class="card-label">تقدمك الحالي</div>
+          <div class="card-value">Front-End Dev</div>
+          <div class="card-sub">الدرس 12 من 24 · 50% مكتمل</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:50%;"></div>
+          </div>
+          <div class="card-course-list">
+            <div class="course-row"><span class="course-dot"></span>HTML & CSS Mastery</div>
+            <div class="course-row"><span class="course-dot"></span>JavaScript ES6+</div>
+            <div class="course-row"><span class="course-dot"></span>React Framework</div>
+          </div>
+        </div>
+        <div class="floating-card card-mini">
+          <div style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;">طلاب جدد اليوم</div>
+          <div style="font-size:26px;font-weight:800;color:var(--primary);">+127</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">↑ 18% عن الأمس</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-stat-card accent">
+          <div class="stat-num-big">+5K</div>
+          <p>طالب ناجح أتمّ رحلته التعليمية</p>
+        </div>
+        <div class="about-stat-card">
+          <div class="stat-num-big">40+</div>
+          <p>كورساً متخصصاً في التقنية</p>
+        </div>
+        <div class="about-stat-card">
+          <div class="stat-num-big">96%</div>
+          <p>نسبة رضا الطلاب عن المحتوى</p>
+        </div>
+        <div class="about-stat-card" style="background:var(--secondary-light);border-color:#A5F3FC;">
+          <div class="stat-num-big" style="color:var(--secondary);">24/7</div>
+          <p>دعم فني متواصل</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.1s;">
+        <div class="section-tag">عن EduNova</div>
+        <h2 class="section-title">منصة تعليمية<br>مصنوعة للمحترفين</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">
+          EduNova Academy منصة تعليمية رائدة تقدّم كورسات عملية في البرمجة والتصميم والمهارات الرقمية، مصمّمة لمن يريد الانتقال من التعلّم إلى سوق العمل بخطوات واضحة ومنهجية.
+        </p>
+        <ul class="about-points">
+          <li><span class="check-icon">✓</span>محتوى مُحدَّث باستمرار يواكب متطلبات السوق</li>
+          <li><span class="check-icon">✓</span>مدرّبون خبراء بتجارب عملية حقيقية</li>
+          <li><span class="check-icon">✓</span>مشاريع تطبيقية تُضاف لـ Portfolio احترافي</li>
+          <li><span class="check-icon">✓</span>شهادات معتمدة تُعزّز سيرتك الذاتية</li>
+          <li><span class="check-icon">✓</span>مجتمع داعم من الزملاء والخبراء</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">الكورسات</div>
+      <h2 class="section-title">أبرز الكورسات المتاحة</h2>
+      <p class="section-sub">كورسات عملية مُصمَّمة لتأهيلك لسوق العمل في أسرع وقت ممكن.</p>
+    </div>
+    <div class="courses-grid">
+
+      <!-- Front-End -->
+      <div class="course-card reveal">
+        <div class="course-banner">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80"
+            alt="Front-End Development"
+            loading="lazy"
+          />
+          <div class="banner-overlay"></div>
+        </div>
+        <div class="course-body">
+          <span class="course-badge" style="background:#EEF2FF;color:var(--primary);">تطوير</span>
+          <div class="course-title">Front-End Development</div>
+          <div class="course-desc">تعلّم HTML وCSS وJavaScript وReact من الصفر حتى الاحتراف.</div>
+          <div class="course-meta">
+            <span><i class="fa-solid fa-clock" style="color:#CBD5E1;"></i> 48 ساعة</span>
+            <span><i class="fa-solid fa-book-open-reader"></i> 24 درس</span>
+            <span style="color:var(--primary);font-weight:600;">مبتدئ ← محترف</span>
+          </div>
+          <div class="course-enroll">سجّل الآن</div>
+        </div>
+      </div>
+
+      <!-- UI/UX -->
+      <div class="course-card reveal" style="transition-delay:.1s;">
+        <div class="course-banner">
+          <img
+            src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80"
+            alt="UI/UX Design"
+            loading="lazy"
+          />
+          <div class="banner-overlay"></div>
+        </div>
+        <div class="course-body">
+          <span class="course-badge" style="background:#ECFEFF;color:var(--secondary);">تصميم</span>
+          <div class="course-title">UI/UX Design</div>
+          <div class="course-desc">صمّم تجارب مستخدم احترافية باستخدام Figma وأدوات التصميم الحديثة.</div>
+          <div class="course-meta">
+            <span><i class="fa-solid fa-clock" style="color:#CBD5E1;"></i> 36 ساعة</span>
+            <span><i class="fa-solid fa-book-open-reader"></i> 18 درس</span>
+            <span style="color:var(--secondary);font-weight:600;">مبتدئ ← محترف</span>
+          </div>
+          <div class="course-enroll">سجّل الآن</div>
+        </div>
+      </div>
+
+      <!-- Data Analysis -->
+      <div class="course-card reveal" style="transition-delay:.2s;">
+        <div class="course-banner">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+            alt="Data Analysis"
+            loading="lazy"
+          />
+          <div class="banner-overlay"></div>
+        </div>
+        <div class="course-body">
+          <span class="course-badge" style="background:#F0FDF4;color:#16A34A;">بيانات</span>
+          <div class="course-title">Data Analysis</div>
+          <div class="course-desc">تحليل البيانات باستخدام Python وExcel وPower BI واستخراج الرؤى القيّمة.</div>
+          <div class="course-meta">
+            <span><i class="fa-solid fa-clock" style="color:#CBD5E1;"></i> 40 ساعة</span>
+            <span><i class="fa-solid fa-book-open-reader"></i> 20 درس</span>
+            <span style="color:#16A34A;font-weight:600;">مبتدئ ← محترف</span>
+          </div>
+          <div class="course-enroll">سجّل الآن</div>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="course-card reveal" style="transition-delay:.3s;">
+        <div class="course-banner">
+          <img
+            src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80"
+            alt="Digital Marketing"
+            loading="lazy"
+          />
+          <div class="banner-overlay"></div>
+        </div>
+        <div class="course-body">
+          <span class="course-badge" style="background:#FFF7ED;color:#D97706;">تسويق</span>
+          <div class="course-title">Digital Marketing</div>
+          <div class="course-desc">إتقان التسويق الرقمي عبر السوشيال ميديا وSEO وإعلانات Meta وGoogle.</div>
+          <div class="course-meta">
+            <span><i class="fa-solid fa-clock" style="color:#CBD5E1;"></i> 32 ساعة</span>
+            <span><i class="fa-solid fa-book-open-reader"></i> 16 درس</span>
+            <span style="color:#D97706;font-weight:600;">مبتدئ ← محترف</span>
+          </div>
+          <div class="course-enroll">سجّل الآن</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-tag">لماذا EduNova</div>
+      <h2 class="section-title">مميزات تجعلنا مختلفين</h2>
+      <p class="section-sub" style="margin:0 auto;">نؤمن بأن التعليم الجيد يُبنى على أسس عملية وتجربة تعلّم سلسة.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:#EEF2FF;"><i class="fa-solid fa-bullseye" style="color:#1485DF;"></i></div>
+        <div class="feature-title">منهج موجّه للسوق</div>
+        <div class="feature-desc">كل كورس مبني بالتعاون مع شركات تقنية رائدة لضمان توافقه مع متطلبات التوظيف الفعلية.</div>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:.1s;">
+        <div class="feature-icon" style="background:#ECFEFF;"><i class="fa-solid fa-award" style="color:#FFD700;"></i></div>
+        <div class="feature-title">شهادات معتمدة</div>
+        <div class="feature-desc">احصل على شهادة إتمام معتمدة قابلة للمشاركة على LinkedIn وإضافتها لسيرتك الذاتية.</div>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:.2s;">
+        <div class="feature-icon" style="background:#F0FDF4;"><i class="fa-solid fa-mobile" style="color:#1485E0;"></i></div>
+        <div class="feature-title">تعلّم في أي وقت</div>
+        <div class="feature-desc">الوصول الكامل من الموبايل والتابلت والكمبيوتر — تعلّم بالسرعة التي تناسبك.</div>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:.3s;">
+        <div class="feature-icon" style="background:#FFF7ED;"><i class="fa-solid fa-laptop-code" style="color:#1485E0;"></i></div>
+        <div class="feature-title">مشاريع حقيقية</div>
+        <div class="feature-desc">ابنِ Portfolio قوياً من خلال مشاريع تطبيقية على مستوى العمل الحقيقي في نهاية كل كورس.</div>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:.1s;">
+        <div class="feature-icon" style="background:#FDF4FF;"><i class="fa-solid fa-comment-dots" style="color:#1485DF;"></i></div>
+        <div class="feature-title">مجتمع داعم</div>
+        <div class="feature-desc">انضم لمجتمع نشط من الطلاب والخريجين للدعم المتبادل والتواصل المهني.</div>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:.2s;">
+        <div class="feature-icon" style="background:#FFF1F2;"><i class="fa-solid fa-rotate" style="color:#1485DF;"></i></div>
+        <div class="feature-title">محتوى محدّث باستمرار</div>
+        <div class="feature-desc">نُحدّث المحتوى بانتظام ليواكب أحدث تقنيات وأدوات السوق بدون تكلفة إضافية.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-tag">آراء الطلاب</div>
+      <h2 class="section-title">ماذا قال طلابنا</h2>
+      <p class="section-sub" style="margin:0 auto;">قصص نجاح حقيقية من طلاب أتمّوا كوراساتهم وبدأوا مسيرتهم المهنية.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal">
+        <div class="stars">
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+        </div>
+        <div class="testimonial-text">
+          "بعد ما خلّصت كورس الـ Front-End، قدرت أحصل على وظيفة كـ Junior Developer في أقل من شهرين. المحتوى عملي جداً ومباشر."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,var(--primary),#818CF8);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div>
+            <div class="author-name">أحمد حسن</div>
+            <div class="author-course">Front-End Development</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:.1s;">
+        <div class="stars">
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+        </div>
+        <div class="testimonial-text">
+          "كورس الـ UI/UX Design غيّر طريقة تفكيري في التصميم كلياً. المدرّب محترف وشرحه واضح، والمشاريع أضافت قيمة لـ Portfolio."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,var(--secondary),#0EA5E9);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div>
+            <div class="author-name">سارة محمود</div>
+            <div class="author-course">UI/UX Design</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:.2s;">
+        <div class="stars">
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color:#FFD43B;"></i>
+        </div>
+        <div class="testimonial-text">
+          "كنت باحث عن منصة بتقدّم Data Analysis بشكل عملي — EduNova كانت الخيار الصح. المنهج منطقي ومترابط جداً."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#16A34A,#4ADE80);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div>
+            <div class="author-name">محمد عادل</div>
+            <div class="author-course">Data Analysis</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <h2 class="cta-title">مستعد تبدأ رحلتك؟</h2>
+    <p class="cta-sub">سجّل الآن وابدأ تعلّمك مجاناً.</p>
+    <div class="cta-form">
+      <input class="cta-input" type="email" placeholder="أدخل بريدك الإلكتروني..." />
+      <button class="btn-white" onclick="handleCTA()">ابدأ مجاناً</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+        <div class="logo-icon">EN</div>
+        <span class="logo-text" style="color:white;">Edu<span style="color:#A5B4FC;">Nova</span></span>
+      </div>
+      <p class="footer-desc">منصة تعليمية متخصصة في تطوير مهارات التقنية والتصميم والتسويق الرقمي.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>الكورسات</h4>
+        <ul>
+          <li><a href="#courses">Front-End Development</a></li>
+          <li><a href="#courses">UI/UX Design</a></li>
+          <li><a href="#courses">Data Analysis</a></li>
+          <li><a href="#courses">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>المنصة</h4>
+        <ul>
+          <li><a href="#about">عن EduNova</a></li>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#testimonials">آراء الطلاب</a></li>
+          <li><a href="#cta">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 EduNova Academy. جميع الحقوق محفوظة.</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
